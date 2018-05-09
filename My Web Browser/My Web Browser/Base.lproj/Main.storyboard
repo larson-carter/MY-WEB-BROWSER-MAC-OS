@@ -741,6 +741,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="desiredWebsiteOnTouch:" target="XfG-lQ-9wD" id="90u-aT-1MZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -753,6 +756,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="desiredWebsite" destination="LPh-9y-P4R" id="1jG-26-4a4"/>
                         <outlet property="webview" destination="PUB-xb-SqO" id="RHv-BO-vGu"/>
                     </connections>
                 </viewController>

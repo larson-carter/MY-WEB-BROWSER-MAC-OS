@@ -11,32 +11,64 @@ import Cocoa
 import WebKit
 
 class ViewController: NSViewController {
-
+    
     @IBOutlet weak var webview: WKWebView!
+    
+    @IBOutlet weak var desiredWebsite: NSTextField!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        let url = URL(string: "https://google.com")
+        var url = URL(string: "https://google.com")
         
-        let request = URLRequest(url: url!)
+        var request = URLRequest(url: url!)
         
         webview.load(request)
         
     }
-
+    
+    @IBAction func desiredWebsiteOnTouch(_ sender: Any) {
+        
+        var url = URL(string: "https://larsoncarter.me")
+        
+        var request = URLRequest(url: url!)
+        
+        webview.load(request)
+        
+    }
+    
     override var representedObject: Any? {
         
         didSet {
             
-        // Update the view, if already loaded.
-            
         }
         
     }
-
-
+    
 }
+
+
+/*
+ import Cocoa
+ import WebKit
+ class ViewController: NSViewController {
+ @IBOutlet weak var webview: WKWebView!
+ @IBOutlet weak var desiredWebsite: NSTextField!
+ override func viewDidLoad() {
+ super.viewDidLoad()
+ var url = URL(string: "https://google.com")
+ var request = URLRequest(url: url!)
+ webview.load(request)
+ }
+ @IBAction func desiredWebsiteOnTouch(_ sender: Any) {
+ var url = URL(string: "https://larsoncarter.me")
+ var request = URLRequest(url: url!)
+ webview.load(request)
+ }
+ override var representedObject: Any? {
+ didSet {
+ }
+ }
+ }
+ */

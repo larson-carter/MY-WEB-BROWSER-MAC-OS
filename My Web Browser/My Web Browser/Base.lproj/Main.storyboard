@@ -756,7 +756,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="desiredWebsite" destination="LPh-9y-P4R" id="1jG-26-4a4"/>
+                        <outlet property="desiredWebsite" destination="LPh-9y-P4R" id="yIu-EX-PkZ"/>
                         <outlet property="webview" destination="PUB-xb-SqO" id="RHv-BO-vGu"/>
                     </connections>
                 </viewController>

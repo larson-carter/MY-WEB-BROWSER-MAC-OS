@@ -14,7 +14,7 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var webview: WKWebView!
     
-    @IBOutlet weak var desiredWebsite: NSTextField!
+    @IBOutlet var desiredWebsite: NSTextField!
     
     override func viewDidLoad() {
         
@@ -30,7 +30,9 @@ class ViewController: NSViewController {
     
     @IBAction func desiredWebsiteOnTouch(_ sender: Any) {
         
-        var url = URL(string: "https://larsoncarter.me")
+        var gotoweb = desiredWebsite.stringValue
+        
+        var url = URL(string: String(gotoweb))
         
         var request = URLRequest(url: url!)
         

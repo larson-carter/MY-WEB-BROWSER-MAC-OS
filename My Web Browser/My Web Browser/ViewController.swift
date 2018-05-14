@@ -16,6 +16,12 @@ class ViewController: NSViewController {
     
     @IBOutlet var desiredWebsite: NSTextField!
     
+    @IBOutlet var goBackButton: NSButton!
+    
+    @IBOutlet var goHomeButton: NSButton!
+    
+    @IBOutlet var goForwardButton: NSButton!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -33,6 +39,18 @@ class ViewController: NSViewController {
         let gotoweb = desiredWebsite.stringValue
         
         let url = URL(string: String(gotoweb))
+        
+        let request = URLRequest(url: url!)
+        
+        webview.load(request)
+        
+    }
+    
+    @IBAction func goHomeOnTouch(_ sender: Any) {
+        
+        let gotohome = "https://google.com"
+        
+        let url = URL(string: String(gotohome))
         
         let request = URLRequest(url: url!)
         

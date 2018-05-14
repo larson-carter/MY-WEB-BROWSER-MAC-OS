@@ -768,6 +768,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="goHomeOnTouch:" target="XfG-lQ-9wD" id="7x9-Hb-H3M"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -781,6 +784,9 @@
                     </view>
                     <connections>
                         <outlet property="desiredWebsite" destination="LPh-9y-P4R" id="yIu-EX-PkZ"/>
+                        <outlet property="goBackButton" destination="FfM-hv-2Jk" id="X0h-1h-q2J"/>
+                        <outlet property="goForwardButton" destination="rbf-P7-Wlr" id="Dma-JS-5ge"/>
+                        <outlet property="goHomeButton" destination="n3m-eH-3Ng" id="Tj5-oG-Khm"/>
                         <outlet property="webview" destination="PUB-xb-SqO" id="RHv-BO-vGu"/>
                     </connections>
                 </viewController>

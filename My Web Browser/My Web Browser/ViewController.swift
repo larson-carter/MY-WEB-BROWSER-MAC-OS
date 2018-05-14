@@ -26,11 +26,15 @@ class ViewController: NSViewController {
         
         super.viewDidLoad()
         
-        let url = URL(string: "https://google.com")
+        let initialurl = "https://google.com"
+        
+        let url = URL(string: String(initialurl))
         
         let request = URLRequest(url: url!)
         
         webview.load(request)
+        
+        desiredWebsite.stringValue = initialurl
         
     }
     
@@ -44,6 +48,8 @@ class ViewController: NSViewController {
         
         webview.load(request)
         
+        desiredWebsite.stringValue = gotoweb
+        
     }
     
     @IBAction func goHomeOnTouch(_ sender: Any) {
@@ -55,6 +61,22 @@ class ViewController: NSViewController {
         let request = URLRequest(url: url!)
         
         webview.load(request)
+        
+        desiredWebsite.stringValue = gotohome
+        
+    }
+    
+    @IBAction func goBackOnTouch(_ sender: Any) {
+        
+        let gotoback = ""
+        
+        let url = URL(string: String(gotoback))
+        
+        let request = URLRequest(url: url!)
+        
+        webview.load(request)
+        
+        desiredWebsite.stringValue = gotoback
         
     }
     

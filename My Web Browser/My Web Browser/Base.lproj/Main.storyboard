@@ -752,6 +752,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="goBackOnTouch:" target="XfG-lQ-9wD" id="wWz-bd-OJq"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-P7-Wlr">
                                 <rect key="frame" x="253" y="1053" width="115" height="32"/>

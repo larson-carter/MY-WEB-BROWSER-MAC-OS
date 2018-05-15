@@ -16,41 +16,42 @@ class ViewController: NSViewController {
     @IBOutlet var goForwardButton: NSButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let initialurl = "https://google.com"
-        let url = URL(string: String(initialurl))
+        let initialUrl = "https://google.com"
+        let url = URL(string: String(initialUrl))
         let request = URLRequest(url: url!)
         webview.load(request)
-        desiredWebsite.stringValue = initialurl
+        desiredWebsite.stringValue = initialUrl
     }
     @IBAction func desiredWebsiteOnTouch(_ sender: Any) {
-        let gotoweb = desiredWebsite.stringValue
-        let url = URL(string: String(gotoweb))
+        let goToWeb = desiredWebsite.stringValue
+        let url = URL(string: String(goToWeb))
         let request = URLRequest(url: url!)
         webview.load(request)
-        desiredWebsite.stringValue = gotoweb
+        desiredWebsite.stringValue = goToWeb
     }
     @IBAction func goHomeOnTouch(_ sender: Any) {
-        let gotohome = "https://google.com"
-        let url = URL(string: String(gotohome))
+        let goToHome = "https://google.com"
+        let url = URL(string: String(goToHome))
         let request = URLRequest(url: url!)
         webview.load(request)
-        desiredWebsite.stringValue = gotohome
+        desiredWebsite.stringValue = goToHome
     }
     @IBAction func goBackOnTouch(_ sender: Any) {
-        let gotoback = ""
-        let url = URL(string: String(gotoback))
+        let goToBack = ""   //  This will load the previous url
+        let url = URL(string: String(goToBack))
         let request = URLRequest(url: url!)
         webview.load(request)
-        desiredWebsite.stringValue = gotoback
+        desiredWebsite.stringValue = goToBack
+    }
+    @IBAction func goForwardOnTouch(_ sender: Any) {
+        let goToForward = ""    //  This will load the previous url of gotoback
+        let url = URL(string: String(goToForward))
+        let request = URLRequest(url: url!)
+        webview.load(request)
+        desiredWebsite.stringValue = goToForward
     }
     override var representedObject: Any? {
         didSet {
-            /*
-            let updateDesiredWebsite = 0
-            while (updateDesiredWebsite < 1) {
-                desiredWebsite.stringValue = // What The Wbe View Currently Shows
-            }
-            */
         }
     }
 }

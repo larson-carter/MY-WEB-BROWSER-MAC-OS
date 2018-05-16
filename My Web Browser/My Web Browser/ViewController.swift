@@ -49,6 +49,18 @@ class ViewController: NSViewController {
         webview.load(request)
         desiredWebsite.stringValue = goToForward
     }
+    /*
+    func updateWebKitViewUrlTextBox(_: desiredWebsite) {
+        var timer = Timer()
+        func timekeeper() {
+            Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: Selector(("whatToDo:")), userInfo: nil, repeats: true)
+            @objc func whatToDo(t: Timer) {
+                var contents = String(contentsOf: webview.url!)
+                desiredWebsite.stringValue = contents
+            }
+        }
+    }
+ */
     override var representedObject: Any? {
         didSet {
         }

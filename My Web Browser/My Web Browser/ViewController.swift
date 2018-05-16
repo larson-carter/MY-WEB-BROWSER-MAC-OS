@@ -5,7 +5,6 @@
 //  Created by 1CSMAD1 on 5/7/18.
 //  Copyright © 2018 Larson Carter. All rights reserved.
 //
-
 import Cocoa
 import WebKit
 class ViewController: NSViewController {

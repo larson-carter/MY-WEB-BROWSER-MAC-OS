@@ -14,6 +14,7 @@
 		D5AB870C20A087190089D40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5AB870A20A087190089D40E /* Main.storyboard */; };
 		D5AB871820A087190089D40E /* My_Web_BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB871720A087190089D40E /* My_Web_BrowserTests.swift */; };
 		D5AB872320A087190089D40E /* My_Web_BrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB872220A087190089D40E /* My_Web_BrowserUITests.swift */; };
+		D740475820ABC28E00589A62 /* NOTES.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740475720ABC28E00589A62 /* NOTES.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D5AB872220A087190089D40E /* My_Web_BrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Web_BrowserUITests.swift; sourceTree = "<group>"; };
 		D5AB872420A087190089D40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5AB873020A089460089D40E /* My Web Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My Web Browser.entitlements"; sourceTree = "<group>"; };
+		D740475720ABC28E00589A62 /* NOTES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOTES.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				D5AB873020A089460089D40E /* My Web Browser.entitlements */,
 				D5AB870120A087170089D40E /* AppDelegate.swift */,
 				D5AB870320A087170089D40E /* ViewController.swift */,
+				D740475720ABC28E00589A62 /* NOTES.swift */,
 				D5AB870820A087190089D40E /* Assets.xcassets */,
 				D5AB870A20A087190089D40E /* Main.storyboard */,
 				D5AB870D20A087190089D40E /* Info.plist */,
@@ -266,6 +269,7 @@
 			files = (
 				D5AB870720A087170089D40E /* My_Web_Browser.xcdatamodeld in Sources */,
 				D5AB870420A087170089D40E /* ViewController.swift in Sources */,
+				D740475820ABC28E00589A62 /* NOTES.swift in Sources */,
 				D5AB870220A087170089D40E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
